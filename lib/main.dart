@@ -23,7 +23,7 @@ class AppTree extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // List<Student> students = initStudents();
+     List<Student> students = initStudents();
 
     return Container(
         margin: EdgeInsets.only(top: 20.0),
@@ -36,7 +36,7 @@ class AppTree extends StatelessWidget {
                   Expanded(
                       child: GestureDetector(
                     onTap: () {
-                      // students[0].display();
+                       students[0].display();
                     },
                     child: Container(
                       height: 60.0,
@@ -47,7 +47,7 @@ class AppTree extends StatelessWidget {
                   Expanded(
                       child: GestureDetector(
                     onTap: () {
-                      // students[1].display();
+                       students[1].display();
                     },
                     child: Container(
                       height: 60.0,
@@ -58,7 +58,7 @@ class AppTree extends StatelessWidget {
                   Expanded(
                       child: GestureDetector(
                     onTap: () {
-                      // students[2].display();
+                       students[2].display();
                     },
                     child: Container(
                       height: 60.0,
@@ -73,28 +73,28 @@ class AppTree extends StatelessWidget {
         ));
   }
 
-  // List<Student> initStudents() {
-  //   List<Student> students = [];
+  List<Student> initStudents() {
+    List<Student> students = [];
 
-  //   Student john = Student();
-  //   john.name = 'John';
-  //   john.age = 30;
-  //   john.school = 'ABC School';
+    Student john = Student();
+    john.name = 'John';
+    john.age = 30;
+    john.school = 'ABC School';
 
-  //   Student mary = Student();
-  //   mary.name = 'Mary';
-  //   mary.age = 25;
-  //   mary.school = 'XYZ School';
+    Student mary = Student();
+    mary.name = 'Mary';
+    mary.age = 25;
+    mary.school = 'XYZ School';
 
-  //   Student peter = Student();
-  //   peter.name = 'Peter';
-  //   peter.age = 20;
-  //   peter.school = 'DEF School';
+    Student peter = Student();
+    peter.name = 'Peter';
+    peter.age = 20;
+    peter.school = 'DEF School';
 
-  //   students.add(john);
-  //   students.add(mary);
-  //   students.add(peter);
+    students.add(john);
+    students.add(mary);
+    students.add(peter);
 
-  //   return students;
-  // }
+    return students;
+  }
 }

@@ -80,16 +80,20 @@ class AppTree extends StatelessWidget {
     john.name = 'John';
     john.age = 30;
     john.school = 'ABC School';
+    john.sex = gender.male; 
 
     Student mary = Student();
     mary.name = 'Mary';
     mary.age = 25;
     mary.school = 'XYZ School';
+    mary.sex = gender.female;
 
     Student peter = Student();
     peter.name = 'Peter';
     peter.age = 20;
     peter.school = 'DEF School';
+    peter.sex = gender.male; 
+
 
     students.add(john);
     students.add(mary);

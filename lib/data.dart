@@ -7,11 +7,14 @@ const color03 = Color.fromARGB(255, 179, 43, 72);
 class Person {
   String? name;
   int? age;
+  gender? sex;
 }
 
-class Student extends Person{
+class Student extends Person {
   String? school;
-  void display(){
-    print("name: $name, age: $age, school: $school");
-  } 
+  void display() {
+    print("name: $name, age: $age, gender: $sex, school: $school");
+  }
 }
+
+enum gender { male, female }

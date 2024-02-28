@@ -23,7 +23,7 @@ class AppTree extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     List<Student> students = initStudents();
+    List<Student> students = initStudents();
 
     return Container(
         margin: EdgeInsets.only(top: 20.0),
@@ -36,33 +36,33 @@ class AppTree extends StatelessWidget {
                   Expanded(
                       child: GestureDetector(
                     onTap: () {
-                       students[0].display();
+                      students[0].display();
                     },
                     child: Container(
+                      child: Image.asset("assets/man.png"),
                       height: 60.0,
-                      color: color01,
                       padding: EdgeInsets.all(5.0),
                     ),
                   )),
                   Expanded(
                       child: GestureDetector(
                     onTap: () {
-                       students[1].display();
+                      students[1].display();
                     },
                     child: Container(
+                      child: Image.asset("assets/people-female.png"),
                       height: 60.0,
-                      color: color02,
                       padding: EdgeInsets.all(5.0),
                     ),
                   )),
                   Expanded(
                       child: GestureDetector(
                     onTap: () {
-                       students[2].display();
+                      students[2].display();
                     },
                     child: Container(
+                      child: Image.asset("assets/male.png"),
                       height: 60.0,
-                      color: color03,
                       padding: EdgeInsets.all(5.0),
                     ),
                   )),
@@ -80,9 +80,9 @@ class AppTree extends StatelessWidget {
     john.name = 'John';
     john.age = 30;
     john.school = 'ABC School';
-    john.sex = gender.male; 
+    john.sex = gender.male;
 
-    Student mary = Student("Mary", 25 , gender.female, "XYZ School");
+    Student mary = Student("Mary", 25, gender.female, "XYZ School");
     mary.name = 'Mary';
     mary.age = 25;
     mary.school = 'XYZ School';
@@ -92,8 +92,7 @@ class AppTree extends StatelessWidget {
     peter.name = 'Peter';
     peter.age = 20;
     peter.school = 'DEF School';
-    peter.sex = gender.male; 
-
+    peter.sex = gender.male;
 
     students.add(john);
     students.add(mary);

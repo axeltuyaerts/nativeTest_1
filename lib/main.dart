@@ -76,19 +76,19 @@ class AppTree extends StatelessWidget {
   List<Student> initStudents() {
     List<Student> students = [];
 
-    Student john = Student();
+    Student john = Student("John", 30, gender.male, "ABC School");
     john.name = 'John';
     john.age = 30;
     john.school = 'ABC School';
     john.sex = gender.male; 
 
-    Student mary = Student();
+    Student mary = Student("Mary", 25 , gender.female, "XYZ School");
     mary.name = 'Mary';
     mary.age = 25;
     mary.school = 'XYZ School';
     mary.sex = gender.female;
 
-    Student peter = Student();
+    Student peter = Student("Peter", 20, gender.male, "DEF School");
     peter.name = 'Peter';
     peter.age = 20;
     peter.school = 'DEF School';
